@@ -45,10 +45,10 @@ def linechart_layout(figure):
 # Dataframe preparation to populate the visuals
 df = pd.read_csv('revenue_dummy.csv')
 
-sales_by_plan = df.groupby(by=df['plan'])[['revenue']].sum().reset_index()
-sales_by_week = df.groupby(by=df['week'])[['revenue']].sum().reset_index()
+revenue_by_plan = df.groupby(by=df['plan'])[['revenue']].sum().reset_index()
+revenue_by_week = df.groupby(by=df['week'])[['revenue']].sum().reset_index()
 current_week = df['week'].max()
-current_week_sales = df[df['week'] == current_week]['revenue'].sum()
+current_week_revenue = df[df['week'] == current_week]['revenue'].sum()
 current_week_avgrevenue = df[df['week'] == current_week]['revenue'].median()
 current_week_new_customers = df[(df['week'] == current_week) & (df['new_customer'] == 'y')]['new_customer'].count()
 
@@ -56,15 +56,15 @@ current_week_new_customers = df[(df['week'] == current_week) & (df['new_customer
 table_df = df.loc[df['week'] == current_week, ['opportunity_id', 'plan', 'country', 'industry', 'public_private', 'revenue']]
 table = html.Div([dash_table.DataTable(data=table_df.to_dict('records'), page_size=12, sort_action='native', sort_mode='multi', style_header={'fontWeight': 'bold'}, style_cell={'textAlign': 'left', 'fontFamily': 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif'})], className='table')
 
-# Barchart to display sales by plan in the first visual
-fig = px.bar(text_auto=False, data_frame=sales_by_plan, x=sales_by_plan['plan'], y=sales_by_plan['revenue'], color=sales_by_plan['plan'], barmode='relative', title='Revenue by plan', color_discrete_map=plan_color_map)
+# Barchart to display revenue by plan in the first visual
+fig = px.bar(text_auto=False, data_frame=revenue_by_plan, x=revenue_by_plan['plan'], y=revenue_by_plan['revenue'], color=revenue_by_plan['plan'], barmode='relative', title='Revenue by plan', color_discrete_map=plan_color_map)
 barchart_layout(fig)
 
 # Variable to store the barchart, used by default and returned in the first callback
 barchart = dcc.Graph(id='first_graph', className='graph', figure=fig)
 
-# Linechart to display sales by week in the second visual
-linechart = px.line(sales_by_week, x=sales_by_week['week'], y=sales_by_week['revenue'], title='Revenue by week')
+# Linechart to display revenue by week in the second visual
+linechart = px.line(revenue_by_week, x=revenue_by_week['week'], y=revenue_by_week['revenue'], title='Revenue by week')
 linechart_layout(linechart)
 
 app = Dash(name=__name__, external_stylesheets=external_stylesheet)
@@ -98,7 +98,7 @@ app.layout = [
                 ], className='inner-display'),
                 html.Div(children=[
                     html.Div(children='Revenue won', className='kpi-title'),
-                    html.Div(children=f'${current_week_sales:,}', className='kpi-value')
+                    html.Div(children=f'${current_week_revenue:,}', className='kpi-value')
                 ], className='inner-display')
             ], className='outer-display'),
             html.Div(children=[
