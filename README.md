@@ -1,7 +1,7 @@
 # About
 Sales dashboard demo app made with the Dash Plotly framework, a python data apps framework.
 
-[!dashboard app screenshot](/assets/dashboard_app.png)
+![dashboard app screenshot](/assets/dashboard_app.png)
 
 # Context
 Several frameworks in the python ecosystem are targeted towards data app development such as [StreamLit](https://streamlit.io/) and [Reflex](https://reflex.dev/).<br> 
