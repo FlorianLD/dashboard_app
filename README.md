@@ -1,7 +1,7 @@
 # About
 Sales dashboard demo app made with the Dash Plotly framework, a python data apps framework.
 
-[screenshot]
+[!dashboard app screenshot](/assets/dashboard_app.png)
 
 # Context
 Several frameworks in the python ecosystem are targeted towards data app development such as [StreamLit](https://streamlit.io/) and [Reflex](https://reflex.dev/).<br> 
@@ -15,11 +15,9 @@ I was curious about the DX of these frameworks and decided to make a dashboard d
 
 
 # Data
-
 Csv data mock file.
 
 # Requirements
-
 The following table lists the requirements taken into account for the app design.
 
 | Number | Requirement | Description |
@@ -31,8 +29,6 @@ The following table lists the requirements taken into account for the app design
 
 
 # Process
-
-
 1. Overview metrics
 
 One of the first steps for developing this app was defining overview metrics variables with pandas through aggregation functions:
@@ -42,23 +38,25 @@ One of the first steps for developing this app was defining overview metrics var
 - current week average revenue
 - current week new customers
 
-``
+```
 sales_by_plan = df.groupby(by=df['plan'])[['revenue']].sum().reset_index()
 sales_by_week = df.groupby(by=df['week'])[['revenue']].sum().reset_index()
 current_week = df['week'].max()
 current_week_sales = df[df['week'] == current_week]['revenue'].sum()
 current_week_avgrevenue = df[df['week'] == current_week]['revenue'].median()
 current_week_new_customers = df[(df['week'] == current_week) & (df['new_customer'] == 'y')]['new_customer'].count()
-``
+```
 
 
 2. Filtering logic
+
 Working on the filtering logic was an important part of the app development. The filtering logic relies on pandas dataframes and on the callback feature of the Dash Plotly framework.
 Callbacks enable interactivity between elements by specifying input, output and function: when the specified input is modified, the function is executed and returns values to the output specified.
 
 Below is an example with the code for the reset filter callback:
 
-``@callback(
+```
+@callback(
     Output('country', 'value'),
     Output('industry', 'value'),
     Output('public_private', 'value'),
@@ -69,16 +67,16 @@ Below is an example with the code for the reset filter callback:
 )
 def reset_filters(n_clicks):
     return [0,0,0, fig, linechart]
-``
+```
 
 This example contains the following elements:
-1) Input: reset button
-2) Outputs:
-    a) Country filter
-    b) Industry filter
-    c) Public/private filter
-    d) First visual
-    e) Second visual
+1. Input: reset button
+2. Outputs:
+    Country filter
+    Industry filter
+    Public/private filter
+    First visual
+    Second visual
 
 When the reset button is clicked by the user, the filters are reset and the default visualizations without filters are displayed.
 
