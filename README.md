@@ -4,7 +4,8 @@ Sales dashboard demo app made with the Dash Plotly framework, a python data apps
 [screenshot]
 
 # Context
-Several frameworks in the python ecosystem are targeted towards data app development such as [StreamLit](https://streamlit.io/) and [Reflex](https://reflex.dev/). These frameworks enable developers to create dashboards by relying only on the python language. Under the hood, these frameworks usually translate python code to HTML/React componenets.
+Several frameworks in the python ecosystem are targeted towards data app development such as [StreamLit](https://streamlit.io/) and [Reflex](https://reflex.dev/).<br> 
+These frameworks enable developers to create dashboards by relying only on the python language.<br> Under the hood, these frameworks usually translate python code to HTML/React componenets.<br>
 One of the benefits of these frameworks is the ability to use python both for the data cleaning/processing part and the app building part, without a language switch.
 I was curious about the DX of these frameworks and decided to make a dashboard demo app with Dash Plotly to try it out.
 
