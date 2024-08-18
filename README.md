@@ -80,10 +80,10 @@ This example contains the following elements:
 
 When the reset button is clicked by the user, the filters are reset and the default visualizations without filters are displayed.
 
-The interaction triggering the callback is the click on the reset button.
-When the reset button is clicked, the reset_filters function is executed and returns elements to the outputs specified in the callback.
+The interaction triggering the callback is the click on the reset button.<br>
+When the reset button is clicked, the `reset_filters` function is executed and returns elements to the outputs specified in the callback.
 "0" is returned to outputs country filter, industry filter and public/private filter in order to reset them.
-fig and linechart are the default visualizations without filters, respectively returned to outputs first_graph and second_visual.
+fig and linechart are the default visualizations without filters, respectively returned to outputs `first_graph` and `second_visual`.
 
 
 ## 3. Styling
