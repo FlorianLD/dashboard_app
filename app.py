@@ -49,7 +49,7 @@ revenue_by_plan = df.groupby(by=df['plan'])[['revenue']].sum().reset_index()
 revenue_by_week = df.groupby(by=df['week'])[['revenue']].sum().reset_index()
 current_week = df['week'].max()
 current_week_revenue = df[df['week'] == current_week]['revenue'].sum()
-current_week_avgrevenue = df[df['week'] == current_week]['revenue'].median()
+current_week_avg_revenue = df[df['week'] == current_week]['revenue'].median()
 current_week_new_customers = df[(df['week'] == current_week) & (df['new_customer'] == 'y')]['new_customer'].count()
 
 # Dataframe for the table visual ('table', see first callback)
@@ -116,7 +116,7 @@ app.layout = [
                 ], className='inner-display'),
                 html.Div(children=[
                     html.Div(children='Average opportunity revenue', className='kpi-title'),
-                    html.Div(children=f'${current_week_avgrevenue:,}', className='kpi-value')
+                    html.Div(children=f'${current_week_avg_revenue:,}', className='kpi-value')
                 ], className='inner-display')
             ], className='outer-display')
         ], className='kpi-section'),
