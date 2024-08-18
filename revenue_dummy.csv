@@ -1,0 +1,100 @@
+﻿opportunity_id,type_id,plan,week,new_customer,revenue,country,industry_id,industry,public_private
+4776,4,CUSTOM,27,y,9627,United States,1,Transportation,Public
+4529,2,ADVANCED,29,y,1899,France,2,Retail,Public
+2783,2,ADVANCED,6,y,2181,Spain,3,Cybersecurity,Public
+479,2,ADVANCED,35,n,5691,France,4,Real estate,Private
+4580,4,CUSTOM,17,y,6047,Spain,5,Healthcare,Private
+3316,4,CUSTOM,28,n,9014,Japan,6,Energy,Private
+1016,3,PREMIUM,9,n,3606,France,4,Real estate,Private
+1885,2,ADVANCED,6,n,8206,Spain,5,Healthcare,Private
+3849,1,BASIC,31,n,8906,Italy,6,Energy,Private
+1297,2,ADVANCED,1,y,5957,Canada,6,Energy,Private
+219,3,PREMIUM,27,y,9234,United States,4,Real estate,Public
+728,4,CUSTOM,32,y,1367,France,5,Healthcare,Public
+740,1,BASIC,23,n,1728,Spain,6,Energy,Public
+2456,1,BASIC,25,y,8940,Portugal,4,Real estate,Public
+3888,1,BASIC,3,y,3741,Estonia,5,Healthcare,Private
+4427,4,CUSTOM,36,y,9350,Japan,6,Energy,Private
+3334,2,ADVANCED,1,n,5754,Finland,4,Real estate,Private
+4281,1,BASIC,24,n,4712,Germany,5,Healthcare,Private
+667,2,ADVANCED,18,n,4351,Italy,6,Energy,Private
+285,2,ADVANCED,13,y,2786,Canada,4,Real estate,Private
+4094,3,PREMIUM,9,y,1274,United States,5,Healthcare,Private
+2609,3,PREMIUM,35,y,3587,France,4,Real estate,Private
+1707,4,CUSTOM,14,y,5522,Canada,5,Healthcare,Private
+1414,3,PREMIUM,36,y,2371,United States,6,Energy,Private
+2720,1,BASIC,2,y,1467,France,4,Real estate,Private
+4337,1,BASIC,9,y,8352,France,5,Healthcare,Private
+215,3,PREMIUM,24,y,3869,Spain,6,Energy,Private
+4402,1,BASIC,9,y,4958,Estonia,5,Healthcare,Private
+1168,4,CUSTOM,10,n,7305,Italy,6,Energy,Private
+1737,4,CUSTOM,13,n,4877,Canada,6,Energy,Public
+3542,2,ADVANCED,29,n,9315,United States,4,Real estate,Public
+4517,3,PREMIUM,27,n,9045,France,5,Healthcare,Public
+371,1,BASIC,17,n,2385,Spain,6,Energy,Public
+2831,3,PREMIUM,7,n,2387,Portugal,4,Real estate,Public
+2848,1,BASIC,33,n,9747,Estonia,5,Healthcare,Public
+212,3,PREMIUM,12,n,1708,Japan,6,Energy,Public
+2622,3,PREMIUM,11,y,4375,Finland,4,Real estate,Public
+2523,1,BASIC,32,y,2154,Germany,5,Healthcare,Private
+453,1,BASIC,13,n,1414,Italy,6,Energy,Private
+4510,4,CUSTOM,14,n,3030,Canada,5,Healthcare,Private
+3641,3,PREMIUM,1,n,7452,United States,6,Energy,Public
+4466,4,CUSTOM,14,y,4246,France,6,Energy,Public
+1434,1,BASIC,7,y,3182,Canada,4,Real estate,Public
+547,3,PREMIUM,11,y,7861,United States,5,Healthcare,Public
+632,4,CUSTOM,22,y,5112,France,6,Energy,Public
+3199,4,CUSTOM,10,y,6016,Spain,4,Real estate,Private
+2658,3,PREMIUM,23,n,7330,Portugal,5,Healthcare,Private
+4968,1,BASIC,33,y,6684,Estonia,6,Energy,Private
+229,4,CUSTOM,27,y,2946,Italy,4,Real estate,Private
+2426,3,PREMIUM,26,n,6300,Canada,5,Healthcare,Private
+1758,1,BASIC,23,y,8660,United States,6,Energy,Private
+1148,1,BASIC,5,y,6334,France,5,Healthcare,Private
+2719,1,BASIC,36,y,7582,Spain,6,Energy,Private
+2698,2,ADVANCED,18,y,4815,Portugal,6,Energy,Private
+4679,3,PREMIUM,34,y,4109,Estonia,4,Real estate,Private
+2364,1,BASIC,32,y,5229,Japan,5,Healthcare,Private
+841,2,ADVANCED,2,y,8842,Finland,6,Energy,Private
+4618,3,PREMIUM,11,y,7131,Spain,4,Real estate,Private
+4925,2,ADVANCED,34,y,2842,Portugal,5,Healthcare,Public
+273,3,PREMIUM,32,y,9270,Estonia,6,Energy,Public
+2769,2,ADVANCED,36,y,9509,Japan,4,Real estate,Public
+2217,4,CUSTOM,17,y,1773,Finland,5,Healthcare,Public
+4645,1,BASIC,11,y,7944,Germany,6,Energy,Public
+2273,4,CUSTOM,8,y,3481,Canada,5,Healthcare,Public
+2504,3,PREMIUM,18,y,6118,France,6,Energy,Public
+2424,1,BASIC,5,y,8228,Spain,6,Energy,Private
+4722,3,PREMIUM,36,y,3294,Spain,4,Real estate,Private
+117,3,PREMIUM,31,y,2586,Portugal,5,Healthcare,Private
+1576,3,PREMIUM,22,y,2180,Estonia,6,Energy,Private
+4513,1,BASIC,16,y,1899,Canada,4,Real estate,Private
+1407,1,BASIC,19,y,8339,United States,5,Healthcare,Private
+4343,4,CUSTOM,32,n,4093,France,6,Energy,Private
+214,4,CUSTOM,30,n,6961,Spain,4,Real estate,Private
+4319,2,ADVANCED,23,n,8725,Portugal,5,Healthcare,Private
+4597,3,PREMIUM,1,n,3251,Estonia,6,Energy,Private
+3335,3,PREMIUM,8,n,4634,Japan,5,Healthcare,Private
+4742,1,BASIC,29,n,3865,Finland,6,Energy,Private
+4798,3,PREMIUM,6,n,1733,Germany,6,Energy,Private
+1989,1,BASIC,31,n,1126,Italy,4,Real estate,Private
+1728,2,ADVANCED,12,n,7330,Canada,5,Healthcare,Private
+642,1,BASIC,12,n,1615,United States,6,Energy,Public
+2547,2,ADVANCED,23,y,5577,France,4,Real estate,Public
+2882,1,BASIC,13,y,2733,Estonia,5,Healthcare,Public
+608,3,PREMIUM,32,n,7811,Japan,6,Energy,Private
+677,1,BASIC,32,y,5609,Finland,4,Real estate,Public
+344,1,BASIC,34,y,7192,Germany,5,Healthcare,Public
+3586,2,ADVANCED,36,y,4525,Japan,6,Energy,Public
+2493,3,PREMIUM,30,y,1474,Finland,5,Healthcare,Public
+3474,3,PREMIUM,35,y,4557,Germany,6,Energy,Private
+4863,4,CUSTOM,8,n,9077,Canada,6,Energy,Public
+1925,4,CUSTOM,5,y,3653,United States,4,Real estate,Public
+3187,3,PREMIUM,26,n,3878,France,5,Healthcare,Public
+2981,4,CUSTOM,25,y,1134,Spain,6,Energy,Public
+510,3,PREMIUM,28,y,3993,Portugal,4,Real estate,Public
+4663,1,BASIC,8,n,5091,Estonia,5,Healthcare,Private
+2536,4,CUSTOM,30,y,6451,Japan,6,Energy,Public
+2362,3,PREMIUM,8,y,2874,Finland,4,Real estate,Private
+4942,1,BASIC,24,y,3274,Germany,5,Healthcare,Private
+333,4,CUSTOM,35,n,1000,Belgium,4,Real estate,Private

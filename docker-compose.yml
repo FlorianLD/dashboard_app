@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  dashapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python app.py
+    ports:
+      - "8050:8050"
+    volumes:
+      - .:/app
+    develop:
+      watch:
+        - action: sync
+          path: ./
+          target: /app
+        - action: rebuild
+          path: requirements.txt
+        - action: rebuild
+          path: app.py
