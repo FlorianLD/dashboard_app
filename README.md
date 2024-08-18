@@ -1,5 +1,5 @@
 # About
-Sales dashboard demo app made with the Dash Plotly framework, a python data apps framework.
+Revenue dashboard demo app made with the Dash Plotly framework, a python data apps framework.
 
 ![dashboard app screenshot](/assets/dashboard_app.png)
 
@@ -32,17 +32,17 @@ The following table lists the requirements taken into account for the app design
 ## 1. Overview metrics
 
 One of the first steps for developing this app was defining overview metrics variables with pandas through aggregation functions:
-- sales by plan
-- sales by week
-- current week
-- current week average revenue
-- current week new customers
+- Revenue by plan
+- Revenue by week
+- Current week
+- Current week average revenue
+- Current week new customers
 
 ```
-sales_by_plan = df.groupby(by=df['plan'])[['revenue']].sum().reset_index()
-sales_by_week = df.groupby(by=df['week'])[['revenue']].sum().reset_index()
+revenue_by_plan = df.groupby(by=df['plan'])[['revenue']].sum().reset_index()
+revenue_by_week = df.groupby(by=df['week'])[['revenue']].sum().reset_index()
 current_week = df['week'].max()
-current_week_sales = df[df['week'] == current_week]['revenue'].sum()
+current_week_revenue = df[df['week'] == current_week]['revenue'].sum()
 current_week_avgrevenue = df[df['week'] == current_week]['revenue'].median()
 current_week_new_customers = df[(df['week'] == current_week) & (df['new_customer'] == 'y')]['new_customer'].count()
 ```
