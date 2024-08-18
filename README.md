@@ -29,7 +29,7 @@ The following table lists the requirements taken into account for the app design
 
 
 # Process
-##1. Overview metrics
+## 1. Overview metrics
 
 One of the first steps for developing this app was defining overview metrics variables with pandas through aggregation functions:
 - sales by plan
@@ -48,7 +48,7 @@ current_week_new_customers = df[(df['week'] == current_week) & (df['new_customer
 ```
 
 
-##2. Filtering logic
+## 2. Filtering logic
 
 Working on the filtering logic was an important part of the app development. The filtering logic relies on pandas dataframes and on the callback feature of the Dash Plotly framework.
 Callbacks enable interactivity between elements by specifying input, output and function: when the specified input is modified, the function is executed and returns values to the output specified.
@@ -86,7 +86,7 @@ When the reset button is clicked, the reset_filters function is executed and ret
 fig and linechart are the default visualizations without filters, respectively returned to outputs first_graph and second_visual.
 
 
-##3. Styling
+## 3. Styling
 
 While the HTML elements are defined in python, it is still necessary to define the styling in a classic css file.
 Styling is defined in the the [styles.css](/assets/styles.css) file.
