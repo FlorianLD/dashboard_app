@@ -50,7 +50,7 @@ current_week_new_customers = df[(df['week'] == current_week) & (df['new_customer
 
 ## 2. Filtering logic
 
-Working on the filtering logic was an important part of the app development. The filtering logic relies on pandas dataframes and on the callback feature of the Dash Plotly framework.
+Working on the filtering logic was an important part of the app development. The filtering logic relies on pandas dataframes and on the callback feature of the Dash Plotly framework.<br>
 Callbacks enable interactivity between elements by specifying input, output and function: when the specified input is modified, the function is executed and returns values to the output specified.
 
 Below is an example with the code for the reset filter callback:
@@ -72,11 +72,11 @@ def reset_filters(n_clicks):
 This example contains the following elements:
 1. Input: reset button
 2. Outputs:
-    Country filter
-    Industry filter
-    Public/private filter
-    First visual
-    Second visual
+    - Country filter
+    - Industry filter
+    - Public/private filter
+    - First visual
+    - Second visual
 
 When the reset button is clicked by the user, the filters are reset and the default visualizations without filters are displayed.
 
